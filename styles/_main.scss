@@ -1,0 +1,77 @@
+
+
+.about {
+    background: linear-gradient(to right, $gradientLeft, $gradientRight);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    img {
+        box-shadow: -10px 5px 10px #150961;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillSet {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
+    text-align: center;
+    @media (max-width: 1000px) {
+        grid-template-columns: 200px 200px;
+    }
+    i {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .displayComp {
+        background: cornflowerblue url('../assets/Macbook.png') center no-repeat;
+        background-size: contain;
+        height: 300px;
+        width: 300px;
+        position: relative;
+    }
+    
+    .displayProjectImage {
+        position: absolute;
+        top: 90px;
+        left:50px;
+    }
+}
+
+.projectInfo {
+    flex: 1 0 300px;
+}
+
+.projectLeft, .projectRight {
+    display: flex;
+}
+
+.projectLeft {
+    flex-direction: row;
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
+}
+
+.projectRight {
+    flex-direction: row-reverse;
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
+}
