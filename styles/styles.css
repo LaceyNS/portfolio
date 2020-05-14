@@ -244,7 +244,7 @@ body {
   color: oldlace;
   text-shadow: 2px 2px black;
   font-family: "Muli", sans-serif;
-  background-color: #150961;
+  background: #150961;
 }
 
 .wrapper {
@@ -261,7 +261,7 @@ li {
   padding: 10px;
 }
 
-li a {
+a {
   text-decoration: none;
   color: whitesmoke;
 }
@@ -314,6 +314,9 @@ nav ul {
 .about {
   background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
   background: linear-gradient(to right, #7ACAFF, #9B76FF);
+}
+
+.aboutInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,14 +324,38 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px;
 }
 
-.about img {
+.aboutInfo img {
   -webkit-box-shadow: -10px 5px 10px #150961;
           box-shadow: -10px 5px 10px #150961;
+  width: 300px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.aboutInfo .aboutMe {
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  .aboutInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.skillSec {
+  background-color: #6D60FF;
 }
 
 .skills {
@@ -390,23 +417,33 @@ nav ul {
 }
 
 .projects .displayComp {
-  background: cornflowerblue url("../assets/Macbook.png") center no-repeat;
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  position: relative;
-}
-
-.projects .displayProjectImage {
-  position: absolute;
-  top: 90px;
-  left: 50px;
+  background: cornflowerblue;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectInfo {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 300px;
           flex: 1 0 300px;
+  padding: 20px;
+  background: #FFF;
+  color: linear-gradient(to right, #7ACAFF, #9B76FF);
+}
+
+.projectInfo button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #150961;
+  border: 2px solid #6D60FF;
 }
 
 .projectLeft, .projectRight {

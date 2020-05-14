@@ -1,14 +1,31 @@
 
 
 .about {
-    background: linear-gradient(to right, $gradientLeft, $gradientRight);
+    background: $gradient;
+}
+
+.aboutInfo {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 40px;
-    img {
-        box-shadow: -10px 5px 10px #150961;
+        img {
+            box-shadow: -10px 5px 10px #150961;
+            width: 300px;
+            flex-shrink: 0;
+        }
+        .aboutMe {
+            padding: 30px;
+        }
+        @media (max-width: 1000px) {
+            flex-direction: column;
     }
+}
+
+.skillSec {
+    background-color: $medColour;
+
 }
 
 .skills {
@@ -17,6 +34,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .skillSet {
     display: grid;
     justify-items: center;
@@ -40,22 +58,25 @@
     flex-direction: column;
     align-items: center;
     .displayComp {
-        background: cornflowerblue url('../assets/Macbook.png') center no-repeat;
-        background-size: contain;
-        height: 300px;
-        width: 300px;
-        position: relative;
-    }
-    
-    .displayProjectImage {
-        position: absolute;
-        top: 90px;
-        left:50px;
+        background: cornflowerblue;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .projectInfo {
     flex: 1 0 300px;
+    padding: 20px;
+    background: #FFF;
+    color: $gradient;
+    button {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: $darkColour;
+        border: 2px solid $medColour
+    }
 }
 
 .projectLeft, .projectRight {

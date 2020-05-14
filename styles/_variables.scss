@@ -1,4 +1,7 @@
 $gradientLeft: #7ACAFF;
-$gradientRight: #9B76FF; 
+$gradientRight: #9B76FF;
+$gradient:linear-gradient(to right, $gradientLeft, $gradientRight);
+$darkColour: #150961;
+$medColour: #6D60FF;
 $serif: 'Playfair Display', serif;
 $sansSerif:  'Muli', sans-serif;
