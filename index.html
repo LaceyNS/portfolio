@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://kit.fontawesome.com/90932e0d16.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Muli&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,80 +20,126 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <section class="landing">
+            <div class="intro">
+                <h1>Lacey Savage</h1>
+                <p>Front End Web Developer</p>
+            </div>
+        </section>
     </header>
     <main>
         <div class="wrapper">
-            <section id="about">
-                <h2>About Me</h2>
+            <section id="about" class="about">
                 <img src="./assets/LS.jpg" alt="Lacey is smiling staring at the camera. She is wearing a black cowl neck sweater. Her purple hair is pulled half back.">
-                <p>Hi, I'm Lacey!</p>
+                <div class="aboutMe">
+                    <h2>About Me</h2>
+                    <p>Hi, I'm Lacey! I'm a recent grad from Juno College.</p>
+                    <p>I look forward to continuing to grow and develop new web development skills!</p>
+                </div>
             </section>
-            <section id="skills">
+            <section id="skills" class="skills">
                 <h2>Skills</h2>
                 <ul class="skillSet">
-                    <li><i class="devicon-html5-plain"></i></li>
-                    <li><i class="devicon-css3-plain"></i></li>
-                    <li><i class="devicon-javascript-plain"></i></li>
-                    <li><i class="devicon-jquery-plain"></i></li>
-                    <li><i class="devicon-github-plain"></i></li>
-                    <li><i class="devicon-sass-original"></i></li>
-                    <li><i class="devicon-react-original"></i></li>
-                    <li><i class="fas fa-universal-access"></i></li>
-                    <li><img src="./assets/icons8-visual-studio-code-2019.svg" alt="Logo for VS Code."></li>
-                    <li><img src="./assets/icons8-firebase.svg" alt="Logo for firebase."></li>
-                    <li><img src="./assets/icons8-responsive-48.png" alt="A monitor displaying a tablet and mobile layout on the screen."></li>
+                    <li class="skill">
+                        <i class="devicon-html5-plain" tabindex="0"></i>
+                        <p class="visuallyhidden">HTML5</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-css3-plain" tabindex="0"></i>
+                        <p class="visuallyhidden">CSS3</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-sass-original" tabindex="0"></i>
+                        <p class="visuallyhidden">SCSS</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-javascript-plain" tabindex="0"></i>
+                        <p class="visuallyhidden">JavaScript</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-jquery-plain" tabindex="0"></i>
+                        <p class="visuallyhidden">jQuery</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-github-plain" tabindex="0"></i>
+                        <p class="visuallyhidden">GitHub</p>
+                    </li>
+                    <li class="skill">
+                        <i class="devicon-react-original" tabindex="0"></i>
+                        <p class="visuallyhidden">React</p>
+                    </li>
+                    <li class="skill">
+                        <i class="fas fa-universal-access" tabindex="0"></i>
+                        <p class="visuallyhidden">Accessibility</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/icons8-firebase.svg" alt="Logo for firebase.">
+                        <p class="visuallyhidden" tabindex="0">Firebase</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/icons8-responsive-48.png" alt="A monitor displaying a tablet and mobile layout on the screen." tabindex="0">
+                        <p class="visuallyhidden">Responsive Design</p>
+                    </li>
                 </ul>
             </section>
-            <section id="projects">
+            <section id="projects" class="projects">
                 <h2>Projects</h2>
-                <div class="displayComp">
-                    <img src="./assets/delicious.png" alt="A screenshot of the delicious restaurant website. It shows a portion of the menu, a restaurant mention, and the beginning of a grid of food images." class="displayProjectImage">
+                <div class="projectLeft">
+                    <div class="displayComp">
+                        <img src="./assets/delicious.png" alt="A screenshot of the delicious restaurant website. It shows a portion of the menu, a restaurant mention, and the beginning of a grid of food images." class="displayProjectImage">
+                    </div>
+                    <div class="projectInfo">
+                        <h3>Delicious Restaurant</h3>
+                        <p>Delicious Restaurant is  multi-page PSD conversion made for a made up company. It is a fully responsive site created using a mobile first approach.</p>
+                        <p><i class="devicon-html5-plain"></i>/<i class="devicon-css3-plain"></i>/<i class="devicon-sass-original"></i></p>
+                        <button><a href="https://github.com/LaceyNS/deliciousRestaurant">View Github</a></button>
+                        <button><a href="https://laceyns.github.io/deliciousRestaurant/">View Live</a></button>
+                    </div>
                 </div>
-                <div class="projectInfo">
-                    <h3>Delicious Restaurant</h3>
-                    <p>Delicious Restaurant is  multi-page PSD conversion made for a made up company. It is a fully responsive site created using a mobile first approach.</p>
-                    <p><i class="devicon-html5-plain"></i>/<i class="devicon-css3-plain"></i>/<i class="devicon-sass-original"></i></p>
-                    <button><a href="https://github.com/LaceyNS/deliciousRestaurant">View Github</a></button>
-                    <button><a href="https://laceyns.github.io/deliciousRestaurant/">View Live</a></button>
+                <div class="projectRight">
+                    <div class="displayComp">
+                        <img src="./assets/adventure.png" alt="A screenshot of the Adventure Mode Activated website. It shows a paragraph of the story with two button options on a dark green background. Below is a picture of a river in the forest." class="displayProjectImage">
+                    </div>
+                    <div class="projectInfo">
+                        <h3>Adventure Mode Activated</h3>
+                        <p>Adventure Mode Activated is a choose your own adventure style site.</p>
+                        <p><i class="devicon-sass-original"></i>/<i class="devicon-javascript-plain"></i>/<i class="devicon-jquery-plain"></i>
+                        </p>
+                        <button><a href="https://github.com/LaceyNS/adventureModeActivated">View Github</a></button>
+                        <button><a href="https://laceyns.github.io/adventureModeActivated">View Live</a></button>
+                    </div>
                 </div>
-                <div class="displayComp">
-                    <img src="./assets/adventure.png" alt="A screenshot of the Adventure Mode Activated website. It shows a paragraph of the story with two button options on a dark green background. Below is a picture of a river in the forest." class="displayProjectImage">
+                <div class="projectLeft">
+                    <div class="displayComp">
+                        <img src="./assets/reelMeals.png" alt="A screenshot of the ReelMeals website. It shows the title of the site and a drop down menu with a covered plate held up by a white gloved hand on either side of the menu. " class="displayProjectImage">
+                    </div>
+                    <div class="projectInfo">
+                        <h3>ReelMeals</h3>
+                        <p>ReelMeals was created in collaboration with Kajanth Kumar. It is a fully responsive site using javascript and accessing the MovieDB API. It allows users to input a genre of film they feel like watching and provides a movie recommendation from that genre along with a food pairing.</p>
+                        <p><i class="devicon-sass-original"></i>/<i class="devicon-javascript-plain"></i>/<i class="devicon-jquery-plain"></i>
+                        </p>
+                        <button><a href="https://github.com/savageblade/projectFour">View Github</a></button>
+                        <button><a href="https://savageblade.github.io/projectFour/">View Live</a></button>
+                    </div>
                 </div>
-                <div class="projectInfo">
-                    <h3>Adventure Mode Activated</h3>
-                    <p>Adventure Mode Activated is a choose your own adventure style site.</p>
-                    <p><i class="devicon-sass-original"></i>/<i class="devicon-javascript-plain"></i>/<i class="devicon-jquery-plain"></i>
-                    </p>
-                    <button><a href="https://github.com/LaceyNS/adventureModeActivated">View Github</a></button>
-                    <button><a href="https://laceyns.github.io/adventureModeActivated">View Live</a></button>
-                </div>
-                <div class="displayComp">
-                    <img src="./assets/reelMeals.png" alt="A screenshot of the ReelMeals website. It shows the title of the site and a drop down menu with a covered plate held up by a white gloved hand on either side of the menu. " class="displayProjectImage">
-                </div>
-                <div class="projectInfo">
-                    <h3>ReelMeals</h3>
-                    <p>ReelMeals was created in collaboration with Kajanth Kumar. It is a fully responsive site using javascript and accessing the MovieDB API. It allows users to input a genre of film they feel like watching and provides a movie recommendation from that genre along with a food pairing.</p>
-                    <p><i class="devicon-sass-original"></i>/<i class="devicon-javascript-plain"></i>/<i class="devicon-jquery-plain"></i>
-                    </p>
-                    <button><a href="https://github.com/savageblade/projectFour">View Github</a></button>
-                    <button><a href="https://savageblade.github.io/projectFour/">View Live</a></button>
-                </div>
-                <div class="displayComp">
-                    <img src="./assets/wtib.png" alt="A screenshot of the Who Told It Better website. It has the title on a burgundy background with a continue button underneath the title." class="displayProjectImage">
-                </div>
-                <div class="projectInfo">
-                    <h3>Who Told It Better?</h3>
-                    <p>Who Told It Better was created in collaboration with Gabriela Parada, Gavin Sutton, and Frank Hoedl. It utilizes the MovieDB API and the Goodreads API to compare movie and their book counterparts based on ratings and reviews.</p>
-                    <p><i class="devicon-sass-original"></i>/<i class="devicon-react-original"></i>
-                    </p>
-                    <button><a href="https://github.com/whotib/whoToldItBetter">View Github</a></button>
-                    <button><a href="https://whotib.github.io/whoToldItBetter/">View Live</a></button>
+                <div class="projectRight">
+                    <div class="displayComp">
+                        <img src="./assets/wtib.png" alt="A screenshot of the Who Told It Better website. It has the title on a burgundy background with a continue button underneath the title." class="displayProjectImage">
+                    </div>
+                    <div class="projectInfo">
+                        <h3>Who Told It Better?</h3>
+                        <p>Who Told It Better was created in collaboration with Gabriela Parada, Gavin Sutton, and Frank Hoedl. It utilizes the MovieDB API and the Goodreads API to compare movie and their book counterparts based on ratings and reviews.</p>
+                        <p><i class="devicon-sass-original"></i>/<i class="devicon-react-original"></i>
+                        </p>
+                        <button><a href="https://github.com/whotib/whoToldItBetter">View Github</a></button>
+                        <button><a href="https://whotib.github.io/whoToldItBetter/">View Live</a></button>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <section id="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <a href="mailto:lacey.savage@gmail.com">lacey.savage@gmail.com</a>
             <ul class="socials">
@@ -104,6 +151,9 @@
         </section>
         <p>Developed by Lacey Savage in 2020</p>
         <p>Firebase, VS Code, and responsive icons sourced from <a href="https://icons8.com">icons8</a>.</p>
+        <p>Laptop image sourced from <a href="https://dimmy.club/laptops/macbook-pro-2016">Dimmy.club</a></p>
     </footer>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

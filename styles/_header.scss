@@ -1,0 +1,26 @@
+// header {
+// }
+
+nav ul {
+    background: linear-gradient(to right, $gradientLeft, $gradientRight);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.landing {
+    height:100vh;
+    background: #150961;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .intro {
+        background: linear-gradient(to right, rgba(122, 202, 255, 0.5), rgba(155, 118, 255, 0.5));
+        padding: 50px;
+        border-radius: 25px;
+    }
+}
