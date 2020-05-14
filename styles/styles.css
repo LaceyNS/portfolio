@@ -254,6 +254,7 @@ body {
 
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 li {
@@ -414,10 +415,11 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
+  background: linear-gradient(to right, #7ACAFF, #9B76FF);
 }
 
 .projects .displayComp {
-  background: cornflowerblue;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,8 +437,6 @@ nav ul {
       -ms-flex: 1 0 300px;
           flex: 1 0 300px;
   padding: 20px;
-  background: #FFF;
-  color: linear-gradient(to right, #7ACAFF, #9B76FF);
 }
 
 .projectInfo button {
@@ -482,4 +482,21 @@ nav ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.footer {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  background-color: #6D60FF;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.contact h2 {
+  margin-top: 0;
 }
