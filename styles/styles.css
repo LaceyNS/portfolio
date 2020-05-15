@@ -242,9 +242,8 @@ html {
 body {
   font-size: calc(.2vw + 1.8rem);
   color: oldlace;
-  text-shadow: 2px 2px black;
+  text-shadow: 1.5px 1.5px black;
   font-family: "Muli", sans-serif;
-  background: #FFF;
   overflow-x: hidden;
 }
 
@@ -300,8 +299,14 @@ a:hover, a:focus {
   font-weight: bold;
 }
 
-header p {
+img {
+  max-width: 100%;
+}
+
+header p, header a {
   font-size: calc((2.6vw + 2rem) * .6);
+  color: oldlace;
+  text-shadow: 1.5px 1.5px black;
 }
 
 nav ul {
@@ -333,6 +338,10 @@ nav ul {
 
 nav ul a {
   padding: 10px 25px;
+}
+
+nav ul a:hover, nav ul a:focus {
+  color: #150961;
 }
 
 @media (max-width: 1000px) {
@@ -588,7 +597,7 @@ nav ul a {
 
 @media (max-width: 550px) {
   .projectInfo {
-    padding: 0;
+    padding: 15px;
   }
 }
 
@@ -644,6 +653,12 @@ nav ul a {
   border-radius: 0 15px 15px 0;
 }
 
+@media (max-width: 1000px) {
+  .projectLeft .projectInfo {
+    border-radius: 15px;
+  }
+}
+
 .projectRight {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -662,6 +677,13 @@ nav ul a {
 
 .projectRight .projectInfo {
   border-radius: 15px 0 0 15px;
+  max-width: 100vw;
+}
+
+@media (max-width: 1000px) {
+  .projectRight .projectInfo {
+    border-radius: 15px;
+  }
 }
 
 footer {

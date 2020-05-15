@@ -5,9 +5,8 @@ html {
 body {
     font-size: calc(.2vw + 1.8rem);
     color: oldlace;
-    text-shadow: 2px 2px black;
+    text-shadow: 1.5px 1.5px black;
     font-family: $sansSerif;
-    background: #FFF;
     overflow-x: hidden;
 
 }
@@ -56,4 +55,8 @@ a {
         color: $gradientLeft;
         font-weight: bold;
     }
+}
+
+img {
+    max-width: 100%;
 }

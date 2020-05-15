@@ -93,7 +93,7 @@
     text-shadow: none;
     text-align: center;
     @media(max-width: 550px){
-        padding: 0;
+        padding: 15px;
     }
     p:first-of-type {
         text-align: left;
@@ -127,6 +127,9 @@
     }
     .projectInfo {
         border-radius: 0 15px 15px 0;
+        @media (max-width: 1000px) {
+            border-radius: 15px;
+        }
     }
 }
 
@@ -137,5 +140,9 @@
     }
     .projectInfo {
         border-radius: 15px 0 0 15px;
+        max-width: 100vw;
+        @media (max-width:1000px){
+            border-radius: 15px;
+        }
     }
 }
