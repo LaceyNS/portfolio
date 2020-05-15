@@ -11,6 +11,11 @@ portfolio.init = function() {
     });
 }
 
+AOS.init({
+        duration: 900,
+})
+
 $(function(){
     portfolio.init();
+    AOS.init();
 })

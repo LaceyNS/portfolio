@@ -244,7 +244,7 @@ body {
   color: oldlace;
   text-shadow: 2px 2px black;
   font-family: "Muli", sans-serif;
-  background: #150961;
+  background: #FFF;
 }
 
 .wrapper {
@@ -252,9 +252,21 @@ body {
   margin: 0 auto;
 }
 
+section {
+  padding: 50px;
+}
+
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
 }
 
 li {
@@ -270,7 +282,6 @@ a {
 nav ul {
   background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
   background: linear-gradient(to right, #7ACAFF, #9B76FF);
-  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,7 +367,8 @@ nav ul {
 }
 
 .skillSec {
-  background-color: #6D60FF;
+  background-color: #150961;
+  text-shadow: none;
 }
 
 .skills {
@@ -373,9 +385,11 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 100px;
 }
 
 .skillSet {
+  padding: 50px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -384,9 +398,12 @@ nav ul {
           align-items: center;
   -ms-grid-columns: 200px 200px 200px 200px 200px;
       grid-template-columns: 200px 200px 200px 200px 200px;
-  -ms-grid-rows: 150px 150px 150px;
-      grid-template-rows: 150px 150px 150px;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
   text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(122, 202, 255, 0.6)), to(rgba(155, 118, 255, 0.6)));
+  background: linear-gradient(to right, rgba(122, 202, 255, 0.6), rgba(155, 118, 255, 0.6));
+  border-radius: 25px;
 }
 
 @media (max-width: 1000px) {
@@ -437,13 +454,24 @@ nav ul {
       -ms-flex: 1 0 300px;
           flex: 1 0 300px;
   padding: 20px;
+  background-color: #8ba0ff;
+  color: #150961;
+  text-shadow: none;
+  text-align: center;
 }
 
-.projectInfo button {
+.projectInfo p:first-of-type {
+  text-align: left;
+}
+
+.projectInfo .button {
   border-radius: 10px;
   padding: 10px 20px;
-  background-color: #150961;
-  border: 2px solid #6D60FF;
+  background-color: #6D60FF;
+  color: oldlace;
+  border: 1px solid oldlace;
+  -webkit-box-shadow: 2px 2px oldlace;
+          box-shadow: 2px 2px oldlace;
 }
 
 .projectLeft, .projectRight {
@@ -484,19 +512,32 @@ nav ul {
   }
 }
 
+footer {
+  background-color: #150961;
+}
+
+.contact {
+  text-align: center;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 50px;
+}
+
 .footer {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.contact {
-  background-color: #6D60FF;
-  text-align: center;
-  font-size: 2.4rem;
-}
-
-.contact h2 {
   margin-top: 0;
 }

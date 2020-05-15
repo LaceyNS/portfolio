@@ -1,15 +1,19 @@
-.footer {
-    font-size: 1.6rem;
-    display: flex
+footer{
+    background-color: $darkColour;
 }
 .contact {
-    background-color: $medColour;
     text-align: center;
-    font-size: 2.4rem;
-    h2 {
-        margin-top: 0;
-    }
 }
 
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
 
-
+.footer {
+    font-size: 1.6rem;
+    display: flex;
+    margin-top: 0;
+}

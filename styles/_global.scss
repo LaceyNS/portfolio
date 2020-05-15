@@ -7,7 +7,7 @@ body {
     color: oldlace;
     text-shadow: 2px 2px black;
     font-family: $sansSerif;
-    background: $darkColour;
+    background: #FFF;
 
 }
 
@@ -16,11 +16,22 @@ body {
     margin: 0 auto;
 }
 
+section {
+    padding: 50px;
+}
+
 h1, h2, h3 {
     font-family: $serif;
     text-align: center;
 }
 
+h2{
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+}
 li {
         list-style-type: none;
         padding: 10px;

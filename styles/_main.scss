@@ -24,7 +24,9 @@
 }
 
 .skillSec {
-    background-color: $medColour;
+    background-color: $darkColour;
+    // color: $darkColour;
+    text-shadow: none;
 
 }
 
@@ -33,15 +35,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .skillSet {
+    padding: 50px;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 200px 200px 200px 200px 200px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
     text-align: center;
+    background: linear-gradient(to right, rgba(122, 202, 255, 0.6), rgba(155, 118, 255, 0.6));
+    border-radius: 25px;
+
     @media (max-width: 1000px) {
         grid-template-columns: 200px 200px;
     }
@@ -58,6 +65,7 @@
     flex-direction: column;
     align-items: center;
     background: $gradient;
+
     .displayComp {
         // background: $medColour;
         width: 50%;
@@ -70,11 +78,20 @@
 .projectInfo {
     flex: 1 0 300px;
     padding: 20px;
-    button {
+    background-color: #8ba0ff;
+    color: $darkColour;
+    text-shadow: none;
+    text-align: center;
+    p:first-of-type {
+        text-align: left;
+    }
+    .button {
         border-radius: 10px;
         padding: 10px 20px;
-        background-color: $darkColour;
-        border: 2px solid $medColour
+        background-color: $medColour;
+        color: oldlace;
+        border: 1px solid oldlace;
+        box-shadow: 2px 2px oldlace;
     }
 }
 
@@ -87,6 +104,9 @@
     @media (max-width:1000px) {
         flex-direction: column;
     }
+    // .projectInfo {
+    //     background-color: $gradientLeft;
+    // }
 }
 
 .projectRight {
@@ -94,4 +114,7 @@
     @media (max-width:1000px) {
         flex-direction: column;
     }
+    // .projectInfo {
+    //     background-color: $gradientRight;
+    // }
 }
