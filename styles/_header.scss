@@ -1,5 +1,7 @@
-header p {
+header p, header a {
     font-size: calc((2.6vw + 2rem) * .6);
+    color: oldlace;
+    text-shadow: 1.5px 1.5px black;
 }
 
 nav ul {
@@ -14,6 +16,9 @@ nav ul {
     }
     a {
         padding: 10px 25px;
+        &:hover,  &:focus {
+            color: $darkColour;
+        }
     }
 }
 
