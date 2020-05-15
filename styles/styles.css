@@ -303,10 +303,8 @@ img {
   max-width: 100%;
 }
 
-header p, header a {
+header p {
   font-size: calc((2.6vw + 2rem) * .6);
-  color: oldlace;
-  text-shadow: 1.5px 1.5px black;
 }
 
 nav ul {
@@ -338,6 +336,7 @@ nav ul {
 
 nav ul a {
   padding: 10px 25px;
+  font-size: calc((2vw + 1.6rem) * .6);
 }
 
 nav ul a:hover, nav ul a:focus {
@@ -745,6 +744,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 0;
+  padding: 15px;
 }
 
 @media (max-width: 1130px) {
