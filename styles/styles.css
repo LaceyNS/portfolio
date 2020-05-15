@@ -256,6 +256,12 @@ section {
   padding: 50px;
 }
 
+@media (max-width: 550px) {
+  section {
+    padding: 0;
+  }
+}
+
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -279,6 +285,11 @@ a {
   color: whitesmoke;
 }
 
+a:hover, a:focus {
+  color: #7ACAFF;
+  font-weight: bold;
+}
+
 nav ul {
   background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
   background: linear-gradient(to right, #7ACAFF, #9B76FF);
@@ -296,6 +307,24 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+nav ul a {
+  padding: 10px 25px;
+}
+
+@media (max-width: 1000px) {
+  .linkTitle {
+    display: none;
+  }
 }
 
 .landing {
@@ -406,10 +435,28 @@ nav ul {
   border-radius: 25px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
+  .skillSet {
+    -ms-grid-columns: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px;
+    -ms-grid-rows: 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px;
+  }
+}
+
+@media (max-width: 900px) {
   .skillSet {
     -ms-grid-columns: 200px 200px;
         grid-template-columns: 200px 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skillSet {
+    -ms-grid-columns: 200px;
+        grid-template-columns: 200px;
+    -ms-grid-rows: (150px)[10];
+        grid-template-rows: repeat(10, 150px);
   }
 }
 
@@ -449,6 +496,12 @@ nav ul {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .projects .displayComp {
+    width: 100%;
+  }
+}
+
 .projectInfo {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 300px;
@@ -458,6 +511,12 @@ nav ul {
   color: #150961;
   text-shadow: none;
   text-align: center;
+}
+
+@media (max-width: 550px) {
+  .projectInfo {
+    padding: 0;
+  }
 }
 
 .projectInfo p:first-of-type {
@@ -472,6 +531,11 @@ nav ul {
   border: 1px solid oldlace;
   -webkit-box-shadow: 2px 2px oldlace;
           box-shadow: 2px 2px oldlace;
+}
+
+.projectInfo .button:hover, .projectInfo .button:focus {
+  color: #150961;
+  border: 1px solid #150961;
 }
 
 .projectLeft, .projectRight {
@@ -493,7 +557,14 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
+}
+
+.projectLeft .projectInfo {
+  border-radius: 0 15px 15px 0;
 }
 
 .projectRight {
@@ -509,7 +580,14 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
+}
+
+.projectRight .projectInfo {
+  border-radius: 15px 0 0 15px;
 }
 
 footer {
@@ -531,7 +609,36 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 50px;
+  padding: 50px 0 0 0;
+  font-size: 5rem;
+}
+
+@media (max-width: 650px) {
+  .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .socials i {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 700px) {
+  .socials li {
+    -webkit-transition: -webkit-transform .5s all;
+    transition: -webkit-transform .5s all;
+    transition: transform .5s all;
+    transition: transform .5s all, -webkit-transform .5s all;
+  }
+  .socials li:hover, .socials li:focus {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .footer {
@@ -539,5 +646,22 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 0;
+}
+
+@media (max-width: 1130px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
