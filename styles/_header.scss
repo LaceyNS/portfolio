@@ -8,6 +8,9 @@ nav ul {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    a {
+        padding: 10px 25px;
+    }
 }
 
 .landing {

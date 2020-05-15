@@ -40,4 +40,8 @@ li {
 a {
     text-decoration: none;
     color: whitesmoke;
+    &:hover, &:focus {
+        color: $gradientLeft;
+        font-weight: bold;
+    }
 }
