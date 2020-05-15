@@ -17,6 +17,8 @@
         }
         .aboutMe {
             padding: 30px;
+            color: $darkColour;
+            text-shadow: none;
         }
         @media (max-width: 1000px) {
             flex-direction: column;
@@ -25,7 +27,6 @@
 
 .skillSec {
     background-color: $darkColour;
-    // color: $darkColour;
     text-shadow: none;
 }
 
@@ -85,6 +86,7 @@
 
 .projectInfo {
     flex: 1 0 300px;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: #8ba0ff;
     color: $darkColour;
@@ -107,6 +109,10 @@
             color: $darkColour;
             border: 1px solid $darkColour;
         }
+        @media(max-width:650px) {
+            display: block;
+            margin: 20px;
+        }
     }
 }
 
@@ -117,8 +123,7 @@
 .projectLeft {
     flex-direction: row;
     @media (max-width:1000px) {
-        flex-direction: column;
-        flex: 1 0 auto;
+        flex-flow: column wrap;
     }
     .projectInfo {
         border-radius: 0 15px 15px 0;
@@ -128,8 +133,7 @@
 .projectRight {
     flex-direction: row-reverse;
     @media (max-width:1000px) {
-        flex-direction: column;
-        flex: 1 0 auto;
+        flex-flow: column wrap;
     }
     .projectInfo {
         border-radius: 15px 0 0 15px;
