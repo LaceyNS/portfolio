@@ -13,6 +13,17 @@ portfolio.init = function() {
         $('p').removeClass('visuallyhidden');
         $('i').removeClass('visuallyhidden');
     }
+
+    $(document).on("click", 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        900
+      );
+    });
 }
 
 AOS.init({
