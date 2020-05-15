@@ -27,7 +27,6 @@
     background-color: $darkColour;
     // color: $darkColour;
     text-shadow: none;
-
 }
 
 .skills {
@@ -74,11 +73,13 @@
     background: $gradient;
 
     .displayComp {
-        // background: $medColour;
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width:1000px) {
+            width: 100%;
+        }
     }
 }
 
@@ -89,6 +90,9 @@
     color: $darkColour;
     text-shadow: none;
     text-align: center;
+    @media(max-width: 550px){
+        padding: 0;
+    }
     p:first-of-type {
         text-align: left;
     }
@@ -114,6 +118,7 @@
     flex-direction: row;
     @media (max-width:1000px) {
         flex-direction: column;
+        flex: 1 0 auto;
     }
     .projectInfo {
         border-radius: 0 15px 15px 0;
@@ -124,6 +129,7 @@
     flex-direction: row-reverse;
     @media (max-width:1000px) {
         flex-direction: column;
+        flex: 1 0 auto;
     }
     .projectInfo {
         border-radius: 15px 0 0 15px;

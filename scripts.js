@@ -1,5 +1,4 @@
-const portfolio = {}
-
+const portfolio = {};
 
 portfolio.init = function() {
     $('.skill').hover(function() {
@@ -9,6 +8,11 @@ portfolio.init = function() {
     $('.skill').on('focusin', function () {
         $(this).find('p').toggleClass('visuallyhidden');
     });
+
+    if ((window.innerWidth < 1000)) {
+        $('p').removeClass('visuallyhidden');
+        $('i').removeClass('visuallyhidden');
+    }
 }
 
 AOS.init({
