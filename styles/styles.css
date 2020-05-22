@@ -242,7 +242,7 @@ html {
 body {
   font-size: calc(.2vw + 1.8rem);
   color: oldlace;
-  text-shadow: 1.5px 1.5px black;
+  text-shadow: 2px 1.5px 2px black;
   font-family: "Muli", sans-serif;
   overflow-x: hidden;
   background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
@@ -475,7 +475,7 @@ nav ul a {
 }
 
 .skillSec {
-  background-color: rgba(21, 9, 97, 0.6);
+  background-color: rgba(21, 9, 97, 0.5);
   text-shadow: none;
 }
 
@@ -509,8 +509,8 @@ nav ul a {
   -ms-grid-rows: 150px 150px;
       grid-template-rows: 150px 150px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(155, 118, 255, 0.6)), to(rgba(122, 202, 255, 0.6)));
-  background: linear-gradient(to right, rgba(155, 118, 255, 0.6), rgba(122, 202, 255, 0.6));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(155, 118, 255, 0.8)), to(rgba(122, 202, 255, 0.8)));
+  background: linear-gradient(to right, rgba(155, 118, 255, 0.8), rgba(122, 202, 255, 0.8));
   border-radius: 25px;
 }
 
@@ -592,7 +592,7 @@ nav ul a {
           flex: 1 0 300px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   background-color: #8ba0ff;
   color: #150961;
   text-shadow: none;
@@ -766,4 +766,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.footer p {
+  padding: 10px;
 }
