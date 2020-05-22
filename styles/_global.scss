@@ -19,6 +19,7 @@ body {
 
 section {
     padding: 50px;
+    border-top: 3px solid $darkColour;
         @media (max-width: 550px) {
         padding: 0;
     }
@@ -55,10 +56,11 @@ a {
     &:hover, &:focus {
         color: $gradientLeft;
         font-weight: bold;
-        -webkit-text-stroke: .5px black;
+        // -webkit-text-stroke: .5px black;
     }
 }
 
 img {
     max-width: 100%;
 }
+
