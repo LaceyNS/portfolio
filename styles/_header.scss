@@ -43,13 +43,15 @@ nav ul {
     position: absolute;
     left: 50%;
     bottom: 5%; 
+    @media (max-width: 600px) {
+        bottom: 2%;
+    }
 }
 
 .scrollDown {
     width: 40px;
     height: 70px;
     margin-left: -20px;
-    bottom: 5%;
     margin-top: -35px;
     box-shadow: inset 0 0 0 2px $gradientRight;
     border-radius: 25px;
