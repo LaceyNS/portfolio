@@ -300,7 +300,6 @@ a {
 a:hover, a:focus {
   color: #7ACAFF;
   font-weight: bold;
-  -webkit-text-stroke: .5px black;
 }
 
 img {
@@ -612,6 +611,11 @@ nav ul a {
   border: 1px solid oldlace;
   -webkit-box-shadow: 2px 2px oldlace;
           box-shadow: 2px 2px oldlace;
+}
+
+.projectInfo .button:hover, .projectInfo .button:focus {
+  color: #7ACAFF;
+  border: 1px solid #150961;
 }
 
 @media (max-width: 650px) {

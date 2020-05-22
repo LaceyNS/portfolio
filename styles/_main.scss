@@ -105,10 +105,10 @@
         color: oldlace;
         border: 1px solid oldlace;
         box-shadow: 2px 2px oldlace;
-        // &:hover, &:focus {
-        //     color: $darkColour;
-        //     border: 1px solid $darkColour;
-        // }
+        &:hover, &:focus {
+            color: $gradientLeft;
+            border: 1px solid $darkColour;
+        }
         @media(max-width:650px) {
             display: block;
             margin: 20px;
