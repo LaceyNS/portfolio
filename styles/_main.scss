@@ -65,6 +65,9 @@
     p {
         font-size: 2rem;
     }
+    img {
+        filter: grayscale(100%) brightness(150%);
+    }
 }
 
 .projects {

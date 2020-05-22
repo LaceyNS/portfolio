@@ -19,6 +19,7 @@ body {
 
 section {
     padding: 50px;
+    border-top: 3px solid $darkColour;
         @media (max-width: 550px) {
         padding: 0;
     }
@@ -62,3 +63,4 @@ a {
 img {
     max-width: 100%;
 }
+
