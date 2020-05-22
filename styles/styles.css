@@ -245,6 +245,9 @@ body {
   text-shadow: 1.5px 1.5px black;
   font-family: "Muli", sans-serif;
   overflow-x: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#7ACAFF), to(#9B76FF));
+  background: linear-gradient(to right, #7ACAFF, #9B76FF);
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -273,7 +276,7 @@ h1 {
 
 h2 {
   margin-top: 0;
-  font-size: calc(.1vw + 2.7rem);
+  font-size: calc(.5vw + 2.8rem);
 }
 
 h3 {
@@ -297,6 +300,7 @@ a {
 a:hover, a:focus {
   color: #7ACAFF;
   font-weight: bold;
+  -webkit-text-stroke: .5px black;
 }
 
 img {
@@ -339,10 +343,6 @@ nav ul a {
   font-size: calc((2vw + 1.6rem) * .6);
 }
 
-nav ul a:hover, nav ul a:focus {
-  color: #150961;
-}
-
 @media (max-width: 1000px) {
   .linkTitle {
     display: none;
@@ -368,8 +368,8 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .landing .intro {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(122, 202, 255, 0.5)), to(rgba(155, 118, 255, 0.5)));
-  background: linear-gradient(to right, rgba(122, 202, 255, 0.5), rgba(155, 118, 255, 0.5));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(155, 118, 255, 0.5)), to(rgba(122, 202, 255, 0.5)));
+  background: linear-gradient(to right, rgba(155, 118, 255, 0.5), rgba(122, 202, 255, 0.5));
   padding: 50px;
   border-radius: 25px;
 }
@@ -475,7 +475,7 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .skillSec {
-  background-color: #150961;
+  background-color: rgba(21, 9, 97, 0.6);
   text-shadow: none;
 }
 
@@ -509,8 +509,8 @@ nav ul a:hover, nav ul a:focus {
   -ms-grid-rows: 150px 150px;
       grid-template-rows: 150px 150px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(122, 202, 255, 0.6)), to(rgba(155, 118, 255, 0.6)));
-  background: linear-gradient(to right, rgba(122, 202, 255, 0.6), rgba(155, 118, 255, 0.6));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(155, 118, 255, 0.6)), to(rgba(122, 202, 255, 0.6)));
+  background: linear-gradient(to right, rgba(155, 118, 255, 0.6), rgba(122, 202, 255, 0.6));
   border-radius: 25px;
 }
 
@@ -614,11 +614,6 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 2px 2px oldlace;
 }
 
-.projectInfo .button:hover, .projectInfo .button:focus {
-  color: #150961;
-  border: 1px solid #150961;
-}
-
 @media (max-width: 650px) {
   .projectInfo .button {
     display: block;
@@ -686,7 +681,7 @@ nav ul a:hover, nav ul a:focus {
 }
 
 footer {
-  background-color: #150961;
+  background-color: rgba(21, 9, 97, 0.5);
 }
 
 .contact {
@@ -745,6 +740,7 @@ footer {
       justify-content: space-around;
   margin-top: 0;
   padding: 15px;
+  background: #150961;
 }
 
 @media (max-width: 1130px) {

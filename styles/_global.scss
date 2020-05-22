@@ -8,7 +8,8 @@ body {
     text-shadow: 1.5px 1.5px black;
     font-family: $sansSerif;
     overflow-x: hidden;
-
+    background: $gradient;
+    line-height: 1.6;
 }
 
 .wrapper {
@@ -33,7 +34,7 @@ h1 {
 }
 h2{
     margin-top: 0;
-    font-size: calc(.1vw + 2.7rem);
+    font-size: calc(.5vw + 2.8rem);
 }
 
 h3 {
@@ -54,6 +55,7 @@ a {
     &:hover, &:focus {
         color: $gradientLeft;
         font-weight: bold;
+        -webkit-text-stroke: .5px black;
     }
 }
 
