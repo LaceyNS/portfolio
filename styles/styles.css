@@ -343,6 +343,11 @@ nav ul a {
   font-size: calc((2vw + 1.6rem) * .6);
 }
 
+nav ul a:hover, nav ul a:focus {
+  color: #150961;
+  text-shadow: none;
+}
+
 @media (max-width: 1000px) {
   .linkTitle {
     display: none;

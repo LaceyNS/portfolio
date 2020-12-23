@@ -15,6 +15,10 @@ nav ul {
     a {
         padding: 10px 25px;
         font-size: calc((2vw + 1.6rem) * .6);
+        &:hover, &:focus {
+            color: $darkColour;
+            text-shadow: none;
+        }
     }
 }
 
@@ -25,8 +29,8 @@ nav ul {
 }
 
 .landing {
-    height:100vh;
-    background: #150961;
+    height: 100vh;
+    background: $darkColour;
     display: flex;
     flex-direction: column;
     justify-content: center;

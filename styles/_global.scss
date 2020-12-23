@@ -39,15 +39,15 @@ h2{
 }
 
 h3 {
-        font-size: calc(.2vw + 2.4rem);
+    font-size: calc(.2vw + 2.4rem);
 }
 
 ul {
     margin: 0;
 }
 li {
-        list-style-type: none;
-        padding: 10px;
+    list-style-type: none;
+    padding: 10px;
     }
 
 a {
@@ -56,7 +56,6 @@ a {
     &:hover, &:focus {
         color: $gradientLeft;
         font-weight: bold;
-        // -webkit-text-stroke: .1rem oldlace;
     }
 }
 
